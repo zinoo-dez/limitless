@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family:Silka Medium, Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT, Myriad Pro, Myriad, DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L, Tahoma, Geneva, Helvetica Neue, Helvetica, Arial, sans-serif ;
+}
+:root{
+--blue:#3308e2;
+--purple:#8c0b92;
+--lightpink:#f1b4c7;
+--darkbeige:#997949;
+--dark:#48473d;
+--beige:#c2b0a0;
+}
+.header-container{
+  background: rgb(140,11,146);
+  background: linear-gradient(331deg, rgba(140,11,146,1) 0%, rgba(140,11,146,1) 30%, rgba(51,8,226,1) 100%);
+  padding: 50px;
+  border-radius: 20px;
+  margin: 30px;
+}
+.nav-container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.logo{
+  height: 26px;
+}
+nav ul{
+  list-style-type:none ;
+ display: flex;
+ gap: 30px;
+}
+nav ul a{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+nav ul a:hover{
+  opacity: 50%;
+}
+.heading-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.h-heading{
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.h-offer,.u-offer,.h-sorry,.join{
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+.u-offer{
+  display: block;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 2px;
+}
+.dot>span{
+  font-size: 2rem;
+  opacity: 50%;
+}
+.join{
+  padding: 8px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-style: none;
+  color: black;
+  cursor: pointer;
+}
+.join:hover{
+  background-color: black;
+  color: white;
+}
+.trusted{
+  margin-top: 100px;
+  font-weight: bold;
+  opacity: 50%;
+}
+.partner-logo-container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  place-items: center;
+  margin-top: 30px;
+}
+.stubhub{
+  display: none;
+}
+@media (max-width: 1000px) {
+  .nav-link-container{
+    display: none;
+  }
+  .h-heading{
+    font-size: 2.5rem;
+  }
+  .h-offer,.u-offer{
+    width: 400px;
+    display: inline;
+  }
+  .partner-logo-container{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+  }
+  .stubhub{
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .h-heading{
+    font-size: 2rem;
+  }
+  .h-offer,.u-offer{
+    width: auto;
+    display: inline;
+  }
+  .partner-logo-container div img{
+    width: 100px;
+  }
+}
