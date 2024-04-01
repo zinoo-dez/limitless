@@ -145,12 +145,11 @@ li:hover ul#submenu{
   width: 600px;
   height: 450px;
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
 }
-.make-easy{
+.make-easy,.gradient-header{
   background: #3308E2;
 background: linear-gradient(to right, #3308E2 0%, #FF1078 100%);
 -webkit-background-clip: text;
@@ -173,10 +172,57 @@ background: linear-gradient(to right, #3308E2 0%, #FF1078 100%);
 
 #img-intro-screen{
   width: 570px;
-  /* height: 100%; */
   border-radius: 20px;
 }
 /* main-card-end */
+
+/* subscription-benifit-start */
+.sb-container{
+  margin: 30px;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: white;
+}
+.choose-plan-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gradient-header{
+  letter-spacing:2px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.h-un{
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+}
+.plan-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  place-items: center;
+  margin-top: 50px;
+}
+.plan-card{
+  width: 200px;
+  padding: 20px;
+}
+.unlimited-plan-heading{
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.unlimited-plan-p{
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 300;
+}
+/* subscription-benifit-end */
 @media (max-width: 1000px) {
   .header-container{
     padding: 30px;
@@ -218,6 +264,27 @@ background: linear-gradient(to right, #3308E2 0%, #FF1078 100%);
     border-radius: 0px 0px 20px 20px;
     height: 100%;
   }
+  .plan-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    place-items: center;
+  }
+  .h-un{
+    font-size: 2rem;
+  }
+  .plan-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .unlimited-plan-heading,.unlimited-plan-p{
+   text-align: center;
+  }
+ #img-plan-card{
+  margin: 0 auto;
+ }
 }
 @media (max-width: 500px) {
   .h-heading{
@@ -229,5 +296,15 @@ background: linear-gradient(to right, #3308E2 0%, #FF1078 100%);
   }
   .partner-logo-container div img{
     width: 100px;
+  }
+  .h-un{
+    font-size: 20px;
+  }
+  .gradient-header{
+    letter-spacing:normal;
+    font-size: 14px;
+  }
+  .hiw{
+    font-size: 20px;
   }
 }
