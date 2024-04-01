@@ -236,7 +236,7 @@ background: linear-gradient(to right, #3308E2 0%, #FF1078 100%);
   width: 780px;
   display: flex;
   gap: 30px;
-  padding: 41px;
+  padding: 50px;
   border-radius: 20px;
 }
 .r-img{
@@ -252,6 +252,72 @@ color: rgb(139, 147, 155);
   width: 360px;
 }
 /* review-session-end */
+/* monthly-plan-start */
+.monthly-plan-container{
+  margin-top: 50px;
+  padding: 30px;
+   border: 2px solid var(--yellow);
+   border-radius: 20px 20px 0 0;
+   width: 500px;
+}
+.offer-tag{
+  color: black;
+  font-size: 0.75rem;
+  background-color: rgb(255 177 61 / 0.2);
+  padding: 5px 10px;
+  border-radius: 30px;
+  border: 2px solid var(--yellow);
+}
+.plan-title,.link{
+  margin-top: 20px;
+  color: black;
+  font-size: 1.25rem;
+}
+.desc,hr{
+color: rgb(139, 147, 155);
+}
+.price{
+  font-size: 1.75rem;
+}
+.ques,.link{
+  font-size: 0.95em;
+}
+.ques{
+  margin-bottom: 30px;
+}
+.link:hover{
+  text-decoration: none;
+}
+.w-in{
+  margin: 20px 0;
+  color: black;
+  font-size: 1.3rem;
+}
+.include-items li{
+  color: black;
+  font-size: 1rem;
+  line-height: 30px;
+  margin-left: 15px;
+  list-style-image: url(./images/pngegg.png);
+}
+.money-container{
+  background-color: rgb(255 177 61 / 0.2);
+  padding: 30px;
+  border: 2px solid var(--yellow);
+  border-radius: 0 0 20px 20px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.money-icon,.save,.b-price{
+  color: black;
+  display: inline-block;
+}
+.b-price{
+  font-weight: bold;
+}
+/* monthly-plan-end */
 @media (max-width: 1250px) {
   .header-container{
     padding: 30px;
